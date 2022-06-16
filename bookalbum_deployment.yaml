@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bookalbum
+  name: last_batch_bookalbum
   labels:
-    app: bookalbum
+    app: last_batch_bookalbum
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bookalbum
+      app: last_batch_bookalbum
   template:
     metadata:
       labels:
-        app: bookalbum
+        app: last_batch_bookalbum
     spec:
       containers:
-      - name: bookalbum
-        image: sreedocker123/bookmoviealbum:latest
+      - name: last_batch_bookalbum
+        image: niri1234/lastbatch_php:latest
         ports:
         - containerPort: 80
