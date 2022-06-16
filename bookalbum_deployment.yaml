@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: last_batch_bookalbum
+  name: lastbatchbookalbum
   labels:
-    app: last_batch_bookalbum
+    app: lastbatchbookalbum
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: last_batch_bookalbum
+      app: lastbatchbookalbum
   template:
     metadata:
       labels:
-        app: last_batch_bookalbum
+        app: lastbatchbookalbum
     spec:
       containers:
-      - name: last_batch_bookalbum
+      - name: lastbatchbookalbum
         image: niri1234/lastbatch_php:latest
         ports:
         - containerPort: 80
